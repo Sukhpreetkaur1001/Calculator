@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f2f2f2;
+        }
+        input, button{
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button{
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+        #result{
+            font-weight: bold;
+            color: blue;
+            margin-top: 20px;
+        }
+        .container{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+           box-shadow:0px 0px 10px gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Calculator</h2>
+
+    <label>Enter First Number:</label><br>
+    <input type="number" id="num1"><br><br>
+
+    <label>Enter Second Number:</label><br>
+    <input type="number" id="num2"><br><br>
+
+    <label>Select Operation(+,-,*,/):</label><br>
+    <input type="text" id="operator"><br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></b>
+</div>
+    <script src="calculator.js"></script>
+</body>
+</html>
